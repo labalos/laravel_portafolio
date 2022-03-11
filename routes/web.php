@@ -17,6 +17,7 @@ use App\Http\Controllers\ProyectoController;
 Route::get('/',[App\Http\Controllers\PortafolioController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+    
     Route::resource('/proyectos', ProyectoController::class);
     Route::get('/dashboard', function(){
         return view('dashboard');

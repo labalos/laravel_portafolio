@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Crear Proyectos') }}
+            {{ __('Crear Proyectos en el Portafolio') }}
         </h2>
     </x-slot>
 
@@ -26,7 +26,7 @@
                     </div>
                 </div>
 
-                <!-- Para ver la imagen seleccionada, de lo contrario no se -->
+                <!-- Para ver la imagen seleccionada -->
                 <div class="grid grid-cols-1 mt-5 mx-7">
                     <img id="imagenSeleccionada" style="max-height: 300px;">           
                 </div>

@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Proyectos') }}
+            {{ __('Portafolio de Proyectos Realizados por COSEMA') }}
         </h2>
     </x-slot>
 

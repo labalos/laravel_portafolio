@@ -14,7 +14,7 @@ class ProyectoController extends Controller
      */
     public function index()
     {
-        $proyectos = Proyecto::paginate(5);
+        $proyectos = Proyecto::paginate(10);
         return view('proyectos.index', compact('proyectos'));
     }
 
@@ -50,7 +50,7 @@ class ProyectoController extends Controller
         }
         
         Proyecto::create($proyecto);
-        return redirect()->route('proyecto.index');
+        return redirect()->route('proyectos.index');
     }
 
     /**
